@@ -28,4 +28,4 @@ To start building:
 
 ```bash
 flatpak run org.flatpak.Builder --install --force-clean build --user io.github.pwr_solaar.solaar.yaml
-``
+```
