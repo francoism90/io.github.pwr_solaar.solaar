@@ -2,9 +2,12 @@
 
 # Installation
 
-## Udev rule
+## udev rule
 
-The udev rule needs to be installed manually by copying the file [rules.d/42-logitech-unify-permissions.rules](https://github.com/pwr-Solaar/Solaar/blob/master/rules.d/42-logitech-unify-permissions.rules) as root from the [Solaar repository](https://github.com/pwr-Solaar/Solaar) to `/etc/udev/rules.d`. In Wayland you may want to instead copy [rules.d-uinput/42-logitech-unify-permissions.rules](https://github.com/pwr-Solaar/Solaar/blob/master/rules.d-uinput/42-logitech-unify-permissions.rules).
+The udev rule needs to be copied manually as root from the [Solaar repository](https://github.com/pwr-Solaar/Solaar) to `/etc/udev/rules.d`:
+
+- For Wayland: [rules.d-uinput/42-logitech-unify-permissions.rules](https://github.com/pwr-Solaar/Solaar/blob/master/rules.d-uinput/42-logitech-unify-permissions.rules)
+- For Xorg (X11): [rules.d/42-logitech-unify-permissions.rules](https://github.com/pwr-Solaar/Solaar/blob/master/rules.d/42-logitech-unify-permissions.rules) 
 
 Afterwards run `sudo udevadm control --reload-rules` or reboot the system.
 
